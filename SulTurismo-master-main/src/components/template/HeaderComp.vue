@@ -84,6 +84,9 @@
           type="text"
           class="input"
           v-model="formulario.nome"
+          placeholder="Digite seu nome..."
+          minlength="0"
+          maxlength="255"
         />
         <span class="highlight"></span>
         <span class="bar"></span>
@@ -95,6 +98,9 @@
           type="text"
           class="input"
           v-model="formulario.cepdestino"
+          placeholder="Ex: 12345-123"
+          minlength="0"
+          maxlength="9"
         />
         <span class="highlight"></span>
         <span class="bar"></span>
@@ -106,6 +112,9 @@
           type="text"
           class="input"
           v-model="formulario.ceporigem"
+          placeholder="Ex: 12345-123"
+          minlength="0"
+          maxlength="9"
         />
         <span class="highlight"></span>
         <span class="bar"></span>
@@ -117,6 +126,7 @@
           type="number"
           class="input"
           v-model="formulario.qtd"
+          placeholder="(1)"
         />
         <span class="highlight"></span>
         <span class="bar"></span>
@@ -125,9 +135,12 @@
       <div class="group">
         <input
           required=""
-          type=""
+          type="text"
           class="input"
           v-model="formulario.telefone"
+          placeholder="Ex: 47123456789"
+          minlength="0"
+          maxlength="11"
         />
         <span class="highlight"></span>
         <span class="bar"></span>
